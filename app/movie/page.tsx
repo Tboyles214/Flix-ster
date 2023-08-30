@@ -15,7 +15,6 @@ async function movieDetails({ searchParams }: { searchParams: any }) {
   const fullMovie = await full.json();
 
   return (
-    
     <div className="flex justify-center mx-auto xlg:flex-wrap gap-8  mt-80 mr-40">
       <div className="md:w-80 md:h-auto">
         <MovieImage src={movie.Poster} alt={movie.Title} />
@@ -33,7 +32,6 @@ async function movieDetails({ searchParams }: { searchParams: any }) {
         </div>
       </div>
     </div>
-    
   );
 }
 export default movieDetails;
