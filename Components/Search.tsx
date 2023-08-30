@@ -23,14 +23,14 @@ const Search = () => {
   };
 
   return (
-    <div className="col-start-5 col-span-2 flex items-center mb-5 justify-center mt-12 md:mt-20  ">
+    <div className="col-start-5 col-span-2 flex items-center mx-auto mb-5 justify-center mt-12 md:mt-20  ">
       <form onSubmit={onSearch}>
-        <div className="flex rounded-full bg-white p-2 mx-4 overflow-hidden">
+        <div className="flex rounded-full bg-white p-2 mx-auto overflow-hidden">
           <input
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             type="text"
-            className="w-full px-6 outline-none sm:w-72 "
+            className="w-70  px-6 outline-none "
             placeholder="Search..."
           />
           <Link

@@ -13,13 +13,13 @@ function Header() {
         </Link>
       </div>
 
-      <div className="col-start-5 col-span-2 flex items-center ml-4 mt-1">
-        <h1 className="text-6xl font-extrabold text-white whitespace-nowrap">
+      <div className="col-start-5 col-span-2 flex flex-col mx-auto mt-1">
+        <h1 className="text-6xl  text-center font-extrabold text-white whitespace-nowrap">
           Flix-ster
         </h1>
+      <Search />
       </div>
 
-      <Search />
     </header>
   );
 }

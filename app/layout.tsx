@@ -22,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={monserrat.className}>
-      <body className=' flex flex-col'>
         <Header />
-        <div className=''>
+        <body className=' flex flex-col'>
+        <div>
         {children}
         </div>
         </body>
