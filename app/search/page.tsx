@@ -18,7 +18,7 @@ async function SearchPage({ searchParams }: {
 
   const searchMovies = response.Search || [];
 
-  // Display only the first 6 movies
+  
   const limitedSearchMovies = searchMovies.slice(0, 6);
 
   return (

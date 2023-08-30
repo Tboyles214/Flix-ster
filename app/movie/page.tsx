@@ -1,5 +1,5 @@
 import MovieImage from "@/components/MovieImage";
-import Image from "next/image";
+
 
 
 
