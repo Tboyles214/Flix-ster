@@ -1,15 +1,14 @@
 import Movie from "@/components/Movie";
 
 
-type SearchParams = {
-  searchTerm: string;
-  movie: any;
-};
+// interface SearchParams = {
+//   searchTerm: any;
+//   movie: any;
+// };
 
 async function SearchPage({ searchParams }: {
-  searchParams: SearchParams;
-  searchTerm: any;
-  movie: any;
+  searchParams: searchParams;
+  
 }) {
   const API_KEY = process.env.API_KEY;
 
@@ -25,7 +24,7 @@ async function SearchPage({ searchParams }: {
     <main className="pt-40 mx-auto px-8 xl:px-0 my-40">
       <section className="flex flex-col space-y-11 pb-44">
         <h1 className="text-5xl font-bold text-center text-black">
-          Search Results for "{searchParams.searchTerm}"
+          Search Results for &quot;{searchParams.searchTerm}&quot;
         </h1>
         <div className='mx-3 grid grid-cols-1 gap-y-10 gap-x-10 ml-32 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8'>
           {limitedSearchMovies.map((movie) => (
