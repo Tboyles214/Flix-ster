@@ -1,7 +1,10 @@
 import MovieImage from "@/components/MovieImage";
 import Image from "next/image";
 
-async function movieDetails({ searchParams }: { searchParams: string }) {
+
+
+
+async function movieDetails({ searchParams }: { searchParams: any }) {
   const API_KEY = process.env.API_KEY;
 
   const res = await fetch(

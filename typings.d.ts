@@ -7,6 +7,8 @@ type Movie = {
 }
 
 type searchParams = {
+    searchTerm: String,
+    movie: any
     s: String,
     page: Number,
 }

@@ -1,8 +1,14 @@
 import Movie from "@/components/Movie";
 
-async function SearchPage({ searchParams }: {
-  searchParams: string;
+
+type SearchParams = {
   searchTerm: string;
+  movie: any;
+};
+
+async function SearchPage({ searchParams }: {
+  searchParams: SearchParams;
+  searchTerm: any;
   movie: any;
 }) {
   const API_KEY = process.env.API_KEY;
