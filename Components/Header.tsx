@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import { BiCameraMovie } from "react-icons/bi";
-import { FaSearch } from "react-icons/fa";
+
 import Search from "./Search";
 
 function Header() {
